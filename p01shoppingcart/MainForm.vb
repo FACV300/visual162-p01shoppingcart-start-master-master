@@ -202,6 +202,7 @@
                 alA2 = Lblcan2.Text
                 acumA1 = Lblpre2.Text * Lblcan2.Text
                 lblTotal.Text = acumA1 + acumA2 + acumA3 + acumA4
+
             End If
 
         Else

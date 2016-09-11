@@ -760,8 +760,8 @@ Partial Class MainForm
         Me.TableLayoutPanel11.ColumnCount = 1
         Me.TableLayoutPanel11.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel11.Controls.Add(Me.LblPrecios, 0, 0)
-        Me.TableLayoutPanel11.Controls.Add(Me.LblTallas, 0, 1)
         Me.TableLayoutPanel11.Controls.Add(Me.Lblsml, 0, 2)
+        Me.TableLayoutPanel11.Controls.Add(Me.LblTallas, 0, 1)
         Me.TableLayoutPanel11.Location = New System.Drawing.Point(169, 3)
         Me.TableLayoutPanel11.Name = "TableLayoutPanel11"
         Me.TableLayoutPanel11.RowCount = 3
@@ -894,7 +894,7 @@ Partial Class MainForm
         Me.TableLayoutPanel13.ColumnCount = 3
         Me.TableLayoutPanel13.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 78.06451!))
         Me.TableLayoutPanel13.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.93548!))
-        Me.TableLayoutPanel13.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 98.0!))
+        Me.TableLayoutPanel13.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 99.0!))
         Me.TableLayoutPanel13.Controls.Add(Me.Label4, 1, 0)
         Me.TableLayoutPanel13.Controls.Add(Me.Label2, 0, 0)
         Me.TableLayoutPanel13.Controls.Add(Me.lblTotal, 2, 0)
@@ -913,7 +913,7 @@ Partial Class MainForm
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.LightSkyBlue
-        Me.Label4.Location = New System.Drawing.Point(216, 2)
+        Me.Label4.Location = New System.Drawing.Point(215, 2)
         Me.Label4.Margin = New System.Windows.Forms.Padding(0)
         Me.Label4.Name = "Label4"
         Me.Label4.Padding = New System.Windows.Forms.Padding(3, 0, 0, 4)
@@ -927,7 +927,7 @@ Partial Class MainForm
         Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(63, 13)
+        Me.Label2.Location = New System.Drawing.Point(62, 13)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(72, 22)
         Me.Label2.TabIndex = 2
