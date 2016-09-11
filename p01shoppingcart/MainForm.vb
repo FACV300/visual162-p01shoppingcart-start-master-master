@@ -89,9 +89,7 @@
         LblPrecios.Text = "$ 120"
         LblTallas.Text = "Tallas"
         Lblsml.Text = "XS  S  M  L  XL"
-        lblTotal.Text = ""
         PictureBox1.Image = ImageList1.Images.Item(0)
-        lblTotal.Text = acumH1 + acumM1 + acumC1 + acumA1
 
     End Sub
 
