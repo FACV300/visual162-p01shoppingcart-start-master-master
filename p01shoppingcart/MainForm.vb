@@ -156,7 +156,7 @@
                 alA1 = Lblcan1.Text
             End If
         Else
-                Beep()
+            Beep()
         End If
     End Sub
 
@@ -226,7 +226,7 @@
             lblTotal.Text = acumC1 + acumC2 + acumC3 + acumC4
         ElseIf lblTituloProducto.Text = "Reloj de Acero" Then
             alA2 = Lblcan2.Text
-            acumA1 = Lblpre2.Text * Lblcan2.Text
+            acumA2 = Lblpre2.Text * Lblcan2.Text
             lblTotal.Text = acumA1 + acumA2 + acumA3 + acumA4
         End If
     End Sub
@@ -294,11 +294,11 @@
                 lblTotal.Text = acumM1 + acumM2 + acumM3 + acumM4
             ElseIf lblTituloProducto.Text = "Zapatos Oxfords" Then
                 alC4 = Lblcan4.Text
-                acumC1 = Lblpre4.Text * Lblcan4.Text
+                acumC4 = Lblpre4.Text * Lblcan4.Text
                 lblTotal.Text = acumC1 + acumC2 + acumC3 + acumC4
             ElseIf lblTituloProducto.Text = "Reloj de Acero" Then
                 alA4 = Lblcan4.Text
-                acumA1 = Lblpre4.Text * Lblcan4.Text
+                acumA4 = Lblpre4.Text * Lblcan4.Text
                 lblTotal.Text = acumA1 + acumA2 + acumA3 + acumA4
             End If
 
@@ -319,11 +319,11 @@
             lblTotal.Text = acumM1 + acumM2 + acumM3 + acumM4
         ElseIf lblTituloProducto.Text = "Zapatos Oxfords" Then
             alC4 = Lblcan4.Text
-            acumC1 = Lblpre4.Text * Lblcan4.Text
+            acumC4 = Lblpre4.Text * Lblcan4.Text
             lblTotal.Text = acumC1 + acumC2 + acumC3 + acumC4
         ElseIf lblTituloProducto.Text = "Reloj de Acero" Then
             alA4 = Lblcan4.Text
-            acumA1 = Lblpre4.Text * Lblcan4.Text
+            acumA4 = Lblpre4.Text * Lblcan4.Text
             lblTotal.Text = acumA1 + acumA2 + acumA3 + acumA4
         End If
 
@@ -391,7 +391,7 @@
         Lblcan2.Text = alC2
         Lblcan3.Text = alC3
         Lblcan4.Text = alC4
-        lblTotal.Text = acumC1 + acumC2 + acumM3 + acumM4
+        lblTotal.Text = acumC1 + acumC2 + acumC3 + acumC4
     End Sub
 
     Private Sub BtnAcce_Click(sender As Object, e As EventArgs) Handles BtnAcce.Click
@@ -420,7 +420,7 @@
         Lblcan2.Text = alA2
         Lblcan3.Text = alA3
         Lblcan4.Text = alA4
-        lblTotal.Text = acumA1 + acumA2 + acumA3 + acumM3
+        lblTotal.Text = acumA1 + acumA2 + acumA3 + acumM4
 
     End Sub
 
@@ -508,8 +508,6 @@
             LblTallas.Text = "Tallas"
             Lblsml.Text = "XS  S  M  L  XL"
             lblTotal.Text = ""
-            Lblpro4.Text = "Polo cuello redondeado"
-            Lblpre4.Text = "$ 70"
         Else
             If Lblpro4.Text = "Abrigo Mezcla Lana" Then
                 lblTituloProducto.Text = "Abrigo Mezcla Lana"
@@ -525,7 +523,6 @@
                     LblPrecios.Text = "$ 80"
                     LblTallas.Text = "Tallas"
                     Lblsml.Text = "37 38 39 40 41 42"
-                    lblTotal.Text = ""
 
                 Else
                     If Lblpro4.Text = "Gorra Clasica" Then
