@@ -87,6 +87,7 @@ Partial Class MainForm
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lblTotal = New System.Windows.Forms.Label()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
+        Me.Label8 = New System.Windows.Forms.Label()
         CType(Me.pbLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
@@ -821,6 +822,7 @@ Partial Class MainForm
         Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
         Me.TableLayoutPanel7.Controls.Add(Me.TableLayoutPanel8, 1, 0)
         Me.TableLayoutPanel7.Controls.Add(Me.btnCerrar, 2, 0)
+        Me.TableLayoutPanel7.Controls.Add(Me.Label8, 0, 0)
         Me.TableLayoutPanel7.Location = New System.Drawing.Point(12, 11)
         Me.TableLayoutPanel7.Name = "TableLayoutPanel7"
         Me.TableLayoutPanel7.RowCount = 1
@@ -883,7 +885,7 @@ Partial Class MainForm
         Me.TableLayoutPanel13.ColumnCount = 3
         Me.TableLayoutPanel13.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 78.06451!))
         Me.TableLayoutPanel13.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.93548!))
-        Me.TableLayoutPanel13.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 96.0!))
+        Me.TableLayoutPanel13.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 97.0!))
         Me.TableLayoutPanel13.Controls.Add(Me.Label4, 1, 0)
         Me.TableLayoutPanel13.Controls.Add(Me.Label2, 0, 0)
         Me.TableLayoutPanel13.Controls.Add(Me.lblTotal, 2, 0)
@@ -902,7 +904,7 @@ Partial Class MainForm
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.LightSkyBlue
-        Me.Label4.Location = New System.Drawing.Point(218, 2)
+        Me.Label4.Location = New System.Drawing.Point(217, 2)
         Me.Label4.Margin = New System.Windows.Forms.Padding(0)
         Me.Label4.Name = "Label4"
         Me.Label4.Padding = New System.Windows.Forms.Padding(3, 0, 0, 4)
@@ -926,13 +928,13 @@ Partial Class MainForm
         '
         Me.lblTotal.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.lblTotal.AutoSize = True
-        Me.lblTotal.Font = New System.Drawing.Font("Segoe UI", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotal.Font = New System.Drawing.Font("Segoe UI", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTotal.ForeColor = System.Drawing.Color.LightSkyBlue
-        Me.lblTotal.Location = New System.Drawing.Point(315, 2)
+        Me.lblTotal.Location = New System.Drawing.Point(316, 2)
         Me.lblTotal.Margin = New System.Windows.Forms.Padding(0)
         Me.lblTotal.Name = "lblTotal"
         Me.lblTotal.Padding = New System.Windows.Forms.Padding(3, 0, 0, 4)
-        Me.lblTotal.Size = New System.Drawing.Size(37, 45)
+        Me.lblTotal.Size = New System.Drawing.Size(36, 44)
         Me.lblTotal.TabIndex = 1
         Me.lblTotal.Text = "0"
         Me.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -957,6 +959,15 @@ Partial Class MainForm
         Me.ImageList1.Images.SetKeyName(13, "accesorios-02.jpg")
         Me.ImageList1.Images.SetKeyName(14, "accesorios-03.jpg")
         Me.ImageList1.Images.SetKeyName(15, "accesorios-04.jpg")
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(3, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(29, 26)
+        Me.Label8.TabIndex = 3
+        Me.Label8.Text = "Label8"
         '
         'MainForm
         '
@@ -1003,6 +1014,7 @@ Partial Class MainForm
         Me.TableLayoutPanel11.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel7.ResumeLayout(False)
+        Me.TableLayoutPanel7.PerformLayout()
         Me.TableLayoutPanel8.ResumeLayout(False)
         Me.TableLayoutPanel8.PerformLayout()
         Me.TableLayoutPanel13.ResumeLayout(False)
@@ -1073,4 +1085,5 @@ Partial Class MainForm
     Friend WithEvents TableLayoutPanel16 As TableLayoutPanel
     Friend WithEvents Label7 As Label
     Friend WithEvents Label4 As Label
+    Friend WithEvents Label8 As Label
 End Class
