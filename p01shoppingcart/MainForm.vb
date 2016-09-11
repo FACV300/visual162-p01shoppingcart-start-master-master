@@ -1,9 +1,21 @@
 ﻿Public Class MainForm
 
-    Dim acumulador1 As Double = 0
-    Dim acumulador2 As Double = 0
-    Dim acumulador3 As Double = 0
-    Dim acumulador4 As Double = 0
+    Dim acumH1 As Double = 0
+    Dim acumH2 As Double = 0
+    Dim acumH3 As Double = 0
+    Dim acumH4 As Double = 0
+    Dim acumM1 As Double = 0
+    Dim acumM2 As Double = 0
+    Dim acumM3 As Double = 0
+    Dim acumM4 As Double = 0
+    Dim acumC1 As Double = 0
+    Dim acumC2 As Double = 0
+    Dim acumC3 As Double = 0
+    Dim acumC4 As Double = 0
+    Dim acumA1 As Double = 0
+    Dim acumA2 As Double = 0
+    Dim acumA3 As Double = 0
+    Dim acumA4 As Double = 0
     Dim alH1 As Integer = 0
     Dim alH2 As Integer = 0
     Dim alH3 As Integer = 0
@@ -20,6 +32,10 @@
     Dim alA2 As Integer = 0
     Dim alA3 As Integer = 0
     Dim alA4 As Integer = 0
+    Dim totalH As Integer = 0
+    Dim totalM As Integer = 0
+    Dim totalC As Integer = 0
+    Dim totalA As Integer = 0
     Private Sub lblTotal_Click(sender As Object, e As EventArgs) Handles lblTotal.Click
 
     End Sub
@@ -75,7 +91,7 @@
         Lblsml.Text = "XS  S  M  L  XL"
         lblTotal.Text = ""
         PictureBox1.Image = ImageList1.Images.Item(0)
-        lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+        lblTotal.Text = acumH1 + acumM1 + acumC1 + acumA1
 
     End Sub
 
@@ -113,7 +129,7 @@
         Lblcan2.Text = alH2
         Lblcan3.Text = alH3
         Lblcan4.Text = alH4
-        lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+        lblTotal.Text = acumH1 + acumH2 + acumH3 + acumH4
 
 
 
@@ -123,20 +139,20 @@
         If Lblcan1.Text > 0 Then
             Lblcan1.Text = Lblcan1.Text - 1
             If lblTituloProducto.Text = "Camisa de Algodon" Then
-                acumulador1 = Lblpre1.Text * Lblcan1.Text
-                lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+                acumH1 = Lblpre1.Text * Lblcan1.Text
+                lblTotal.Text = acumH1 + acumH2 + acumH3 + acumH4
                 alH1 = Lblcan1.Text
             ElseIf lblTituloProducto.Text = "Polo Rayas Cuello Redondo" Then
-                acumulador1 = Lblpre1.Text * Lblcan1.Text
-                lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+                acumM1 = Lblpre1.Text * Lblcan1.Text
+                lblTotal.Text = acumM1 + acumM2 + acumM3 + acumM4
                 alM1 = Lblcan1.Text
             ElseIf lblTituloProducto.Text = "Zapatos Oxfords" Then
-                acumulador1 = Lblpre1.Text * Lblcan1.Text
-                lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+                acumC1 = Lblpre1.Text * Lblcan1.Text
+                lblTotal.Text = acumC1 + acumC2 + acumC3 + acumC4
                 alC1 = Lblcan1.Text
             ElseIf lblTituloProducto.Text = "Reloj de Acero" Then
-                acumulador1 = Lblpre1.Text * Lblcan1.Text
-                lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+                acumA1 = Lblpre1.Text * Lblcan1.Text
+                lblTotal.Text = acumA1 + acumA2 + acumA3 + acumA4
                 alA1 = Lblcan1.Text
             End If
         Else
@@ -147,20 +163,20 @@
     Private Sub Btnmas1_Click(sender As Object, e As EventArgs) Handles Btnmas1.Click
         Lblcan1.Text = Lblcan1.Text + 1
         If lblTituloProducto.Text = "Camisa de Algodon" Then
-            acumulador1 = Lblpre1.Text * Lblcan1.Text
-            lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+            acumH1 = Lblpre1.Text * Lblcan1.Text
+            lblTotal.Text = acumH1 + acumH2 + acumH3 + acumH4
             alH1 = Lblcan1.Text
         ElseIf lblTituloProducto.Text = "Polo Rayas Cuello Redondo" Then
-            acumulador1 = Lblpre1.Text * Lblcan1.Text
-            lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+            acumM1 = Lblpre1.Text * Lblcan1.Text
+            lblTotal.Text = acumM1 + acumM2 + acumM3 + acumM4
             alM1 = Lblcan1.Text
         ElseIf lblTituloProducto.Text = "Zapatos Oxfords" Then
-            acumulador1 = Lblpre1.Text * Lblcan1.Text
-            lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+            acumC1 = Lblpre1.Text * Lblcan1.Text
+            lblTotal.Text = acumC1 + acumC2 + acumC3 + acumC4
             alC1 = Lblcan1.Text
         ElseIf lblTituloProducto.Text = "Reloj de Acero" Then
-            acumulador1 = Lblpre1.Text * Lblcan1.Text
-            lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+            acumA1 = Lblpre1.Text * Lblcan1.Text
+            lblTotal.Text = acumA1 + acumA2 + acumA3 + acumA4
             alA1 = Lblcan1.Text
         End If
 
@@ -172,20 +188,20 @@
 
             If lblTituloProducto.Text = "Camisa de Algodon" Then
                 alH2 = Lblcan2.Text
-                acumulador2 = Lblpre2.Text * Lblcan2.Text
-                lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+                acumH2 = Lblpre2.Text * Lblcan2.Text
+                lblTotal.Text = acumH1 + acumH2 + acumH3 + acumH4
             ElseIf lblTituloProducto.Text = "Polo Rayas Cuello Redondo" Then
                 alM2 = Lblcan2.Text
-                acumulador2 = Lblpre2.Text * Lblcan2.Text
-                lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+                acumM2 = Lblpre2.Text * Lblcan2.Text
+                lblTotal.Text = acumM1 + acumM2 + acumM3 + acumM4
             ElseIf lblTituloProducto.Text = "Zapatos Oxfords" Then
                 alC2 = Lblcan2.Text
-                acumulador2 = Lblpre2.Text * Lblcan2.Text
-                lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+                acumC2 = Lblpre2.Text * Lblcan2.Text
+                lblTotal.Text = acumC1 + acumC2 + acumC3 + acumC4
             ElseIf lblTituloProducto.Text = "Reloj de Acero" Then
                 alA2 = Lblcan2.Text
-                acumulador2 = Lblpre2.Text * Lblcan2.Text
-                lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+                acumA1 = Lblpre2.Text * Lblcan2.Text
+                lblTotal.Text = acumA1 + acumA2 + acumA3 + acumA4
             End If
 
         Else
@@ -197,20 +213,20 @@
         Lblcan2.Text = Lblcan2.Text + 1
         If lblTituloProducto.Text = "Camisa de Algodon" Then
             alH2 = Lblcan2.Text
-            acumulador2 = Lblpre2.Text * Lblcan2.Text
-            lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+            acumH2 = Lblpre2.Text * Lblcan2.Text
+            lblTotal.Text = acumH1 + acumH2 + acumH3 + acumH4
         ElseIf lblTituloProducto.Text = "Polo Rayas Cuello Redondo" Then
             alM2 = Lblcan2.Text
-            acumulador2 = Lblpre2.Text * Lblcan2.Text
-            lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+            acumM2 = Lblpre2.Text * Lblcan2.Text
+            lblTotal.Text = acumM1 + acumM2 + acumM3 + acumM4
         ElseIf lblTituloProducto.Text = "Zapatos Oxfords" Then
             alC2 = Lblcan2.Text
-            acumulador2 = Lblpre2.Text * Lblcan2.Text
-            lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+            acumC2 = Lblpre2.Text * Lblcan2.Text
+            lblTotal.Text = acumC1 + acumC2 + acumC3 + acumC4
         ElseIf lblTituloProducto.Text = "Reloj de Acero" Then
             alA2 = Lblcan2.Text
-            acumulador2 = Lblpre2.Text * Lblcan2.Text
-            lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+            acumA1 = Lblpre2.Text * Lblcan2.Text
+            lblTotal.Text = acumA1 + acumA2 + acumA3 + acumA4
         End If
     End Sub
 
@@ -220,20 +236,20 @@
 
             If lblTituloProducto.Text = "Camisa de Algodon" Then
                 alH3 = Lblcan3.Text
-                acumulador3 = Lblpre3.Text * Lblcan3.Text
-                lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+                acumH3 = Lblpre3.Text * Lblcan3.Text
+                lblTotal.Text = acumH1 + acumH2 + acumH3 + acumH4
             ElseIf lblTituloProducto.Text = "Polo Rayas Cuello Redondo" Then
                 alM3 = Lblcan3.Text
-                acumulador3 = Lblpre3.Text * Lblcan3.Text
-                lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+                acumM3 = Lblpre3.Text * Lblcan3.Text
+                lblTotal.Text = acumM1 + acumM2 + acumM3 + acumM4
             ElseIf lblTituloProducto.Text = "Zapatos Oxfords" Then
                 alC3 = Lblcan3.Text
-                acumulador3 = Lblpre3.Text * Lblcan3.Text
-                lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+                acumC3 = Lblpre3.Text * Lblcan3.Text
+                lblTotal.Text = acumC1 + acumC2 + acumC3 + acumC4
             ElseIf lblTituloProducto.Text = "Reloj de Acero" Then
                 alA3 = Lblcan3.Text
-                acumulador3 = Lblpre3.Text * Lblcan3.Text
-                lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+                acumA3 = Lblpre3.Text * Lblcan3.Text
+                lblTotal.Text = acumA1 + acumA2 + acumA3 + acumA4
             End If
 
         Else
@@ -245,20 +261,20 @@
         Lblcan3.Text = Lblcan3.Text + 1
         If lblTituloProducto.Text = "Camisa de Algodon" Then
             alH3 = Lblcan3.Text
-            acumulador3 = Lblpre3.Text * Lblcan3.Text
-            lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+            acumH3 = Lblpre3.Text * Lblcan3.Text
+            lblTotal.Text = acumH1 + acumH2 + acumH3 + acumH4
         ElseIf lblTituloProducto.Text = "Polo Rayas Cuello Redondo" Then
             alM3 = Lblcan3.Text
-            acumulador3 = Lblpre3.Text * Lblcan3.Text
-            lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+            acumM3 = Lblpre3.Text * Lblcan3.Text
+            lblTotal.Text = acumM1 + acumM2 + acumM3 + acumM4
         ElseIf lblTituloProducto.Text = "Zapatos Oxfords" Then
             alC3 = Lblcan3.Text
-            acumulador3 = Lblpre3.Text * Lblcan3.Text
-            lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+            acumC3 = Lblpre3.Text * Lblcan3.Text
+            lblTotal.Text = acumC1 + acumC2 + acumC3 + acumC4
         ElseIf lblTituloProducto.Text = "Reloj de Acero" Then
             alA3 = Lblcan3.Text
-            acumulador3 = Lblpre3.Text * Lblcan3.Text
-            lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+            acumA3 = Lblpre3.Text * Lblcan3.Text
+            lblTotal.Text = acumA1 + acumA2 + acumA3 + acumA4
         End If
 
     End Sub
@@ -269,20 +285,20 @@
 
             If lblTituloProducto.Text = "Camisa de Algodon" Then
                 alH4 = Lblcan4.Text
-                acumulador4 = Lblpre4.Text * Lblcan4.Text
-                lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+                acumH4 = Lblpre4.Text * Lblcan4.Text
+                lblTotal.Text = acumH1 + acumH2 + acumH3 + acumH4
             ElseIf lblTituloProducto.Text = "Polo Rayas Cuello Redondo" Then
                 alM4 = Lblcan4.Text
-                acumulador4 = Lblpre4.Text * Lblcan4.Text
-                lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+                acumM4 = Lblpre4.Text * Lblcan4.Text
+                lblTotal.Text = acumM1 + acumM2 + acumM3 + acumM4
             ElseIf lblTituloProducto.Text = "Zapatos Oxfords" Then
                 alC4 = Lblcan4.Text
-                acumulador4 = Lblpre4.Text * Lblcan4.Text
-                lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+                acumC1 = Lblpre4.Text * Lblcan4.Text
+                lblTotal.Text = acumC1 + acumC2 + acumC3 + acumC4
             ElseIf lblTituloProducto.Text = "Reloj de Acero" Then
                 alA4 = Lblcan4.Text
-                acumulador4 = Lblpre4.Text * Lblcan4.Text
-                lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+                acumA1 = Lblpre4.Text * Lblcan4.Text
+                lblTotal.Text = acumA1 + acumA2 + acumA3 + acumA4
             End If
 
         Else
@@ -294,20 +310,20 @@
         Lblcan4.Text = Lblcan4.Text + 1
         If lblTituloProducto.Text = "Camisa de Algodon" Then
             alH4 = Lblcan4.Text
-            acumulador4 = Lblpre4.Text * Lblcan4.Text
-            lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+            acumH4 = Lblpre4.Text * Lblcan4.Text
+            lblTotal.Text = acumH1 + acumH2 + acumH3 + acumH4
         ElseIf lblTituloProducto.Text = "Polo Rayas Cuello Redondo" Then
             alM4 = Lblcan4.Text
-            acumulador4 = Lblpre4.Text * Lblcan4.Text
-            lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+            acumM4 = Lblpre4.Text * Lblcan4.Text
+            lblTotal.Text = acumM1 + acumM2 + acumM3 + acumM4
         ElseIf lblTituloProducto.Text = "Zapatos Oxfords" Then
             alC4 = Lblcan4.Text
-            acumulador4 = Lblpre4.Text * Lblcan4.Text
-            lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+            acumC1 = Lblpre4.Text * Lblcan4.Text
+            lblTotal.Text = acumC1 + acumC2 + acumC3 + acumC4
         ElseIf lblTituloProducto.Text = "Reloj de Acero" Then
             alA4 = Lblcan4.Text
-            acumulador4 = Lblpre4.Text * Lblcan4.Text
-            lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+            acumA1 = Lblpre4.Text * Lblcan4.Text
+            lblTotal.Text = acumA1 + acumA2 + acumA3 + acumA4
         End If
 
     End Sub
@@ -340,7 +356,7 @@
         Lblcan2.Text = alM2
         Lblcan3.Text = alM3
         Lblcan4.Text = alM4
-        lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+        lblTotal.Text = acumM1 + acumM2 + acumM3 + acumM4
 
 
     End Sub
@@ -374,7 +390,7 @@
         Lblcan2.Text = alC2
         Lblcan3.Text = alC3
         Lblcan4.Text = alC4
-        lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+        lblTotal.Text = acumC1 + acumC2 + acumM3 + acumM4
     End Sub
 
     Private Sub BtnAcce_Click(sender As Object, e As EventArgs) Handles BtnAcce.Click
@@ -403,7 +419,7 @@
         Lblcan2.Text = alA2
         Lblcan3.Text = alA3
         Lblcan4.Text = alA4
-        lblTotal.Text = acumulador1 + acumulador2 + acumulador3 + acumulador4
+        lblTotal.Text = acumA1 + acumA2 + acumA3 + acumM3
 
     End Sub
 
@@ -524,5 +540,14 @@
 
     Private Sub Lblcan1_Click(sender As Object, e As EventArgs) Handles Lblcan1.Click
 
+    End Sub
+
+    Private Sub btnComprar_Click(sender As Object, e As EventArgs) Handles btnComprar.Click
+
+        If lblTotal.Text = 0 Then
+            Beep()
+        Else
+            MessageBox.Show("Usted pagó con éxito: $ " + lblTotal.Text)
+        End If
     End Sub
 End Class

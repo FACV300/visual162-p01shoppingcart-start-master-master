@@ -80,6 +80,7 @@ Partial Class MainForm
         Me.TableLayoutPanel7 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel8 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.plLinea = New System.Windows.Forms.Panel()
         Me.btnComprar = New System.Windows.Forms.Button()
         Me.TableLayoutPanel13 = New System.Windows.Forms.TableLayoutPanel()
@@ -87,7 +88,6 @@ Partial Class MainForm
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lblTotal = New System.Windows.Forms.Label()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
-        Me.Label8 = New System.Windows.Forms.Label()
         CType(Me.pbLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
@@ -857,6 +857,15 @@ Partial Class MainForm
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Tienda Virtual"
         '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(3, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(29, 26)
+        Me.Label8.TabIndex = 3
+        Me.Label8.Text = "Label8"
+        '
         'plLinea
         '
         Me.plLinea.BackColor = System.Drawing.Color.SteelBlue
@@ -885,7 +894,7 @@ Partial Class MainForm
         Me.TableLayoutPanel13.ColumnCount = 3
         Me.TableLayoutPanel13.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 78.06451!))
         Me.TableLayoutPanel13.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.93548!))
-        Me.TableLayoutPanel13.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 97.0!))
+        Me.TableLayoutPanel13.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 98.0!))
         Me.TableLayoutPanel13.Controls.Add(Me.Label4, 1, 0)
         Me.TableLayoutPanel13.Controls.Add(Me.Label2, 0, 0)
         Me.TableLayoutPanel13.Controls.Add(Me.lblTotal, 2, 0)
@@ -904,7 +913,7 @@ Partial Class MainForm
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.LightSkyBlue
-        Me.Label4.Location = New System.Drawing.Point(217, 2)
+        Me.Label4.Location = New System.Drawing.Point(216, 2)
         Me.Label4.Margin = New System.Windows.Forms.Padding(0)
         Me.Label4.Name = "Label4"
         Me.Label4.Padding = New System.Windows.Forms.Padding(3, 0, 0, 4)
@@ -959,15 +968,6 @@ Partial Class MainForm
         Me.ImageList1.Images.SetKeyName(13, "accesorios-02.jpg")
         Me.ImageList1.Images.SetKeyName(14, "accesorios-03.jpg")
         Me.ImageList1.Images.SetKeyName(15, "accesorios-04.jpg")
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(3, 0)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(29, 26)
-        Me.Label8.TabIndex = 3
-        Me.Label8.Text = "Label8"
         '
         'MainForm
         '
